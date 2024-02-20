@@ -6,9 +6,19 @@
     <title>Flexible Card Layout using CSS Grid (Alternative)</title>
     <style>
       /* Grid Container */
-
+      .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 100px);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        width: 400px;
+      }
       /* Card Item */
-
+      .card {
+        border: 2px solid pink;
+        text-align: center;
+      }
       /* Media Query for Responsive Layout */
       @media (max-width: 768px) {
         /* Grid Container */

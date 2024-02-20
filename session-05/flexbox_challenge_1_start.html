@@ -6,9 +6,26 @@
     <title>Flexbox Challenge 1</title>
     <style>
       /* Flexbox for Navigation */
-
+      .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .nav-container > a {
+        padding: 10px;
+      }
       /* Media Query for Responsive Layout */
-      @media (max-width: 768px) {
+      @media (min-width: 700px) {
+        .nav-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .nav-container > a {
+          padding: 10px;
+        }
       }
     </style>
   </head>

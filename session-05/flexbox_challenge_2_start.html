@@ -6,9 +6,31 @@
     <title>Flexbox Challenge 2</title>
     <style>
       /* Flexbox for Cards*/
-
+      .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        padding: 10px;
+        border: 2px solid black;
+        margin: 2px;
+      }
       /* Media Query for Responsive Layout */
-      @media (max-width: 768px) {
+      @media (min-width: 768px) {
+        /* Flexbox for Cards*/
+        .card-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+        .card {
+          padding: 10px;
+          border: 2px solid black;
+          margin: 2px;
+        }
       }
     </style>
   </head>
