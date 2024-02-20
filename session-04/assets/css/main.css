@@ -1,0 +1,44 @@
+main > :first-child{
+    font-size: 100;
+    border: 1px solid black;
+    border-color: black;
+    padding: 20px;
+}
+
+main > :nth-child(2){
+    font-size: 40;
+    border: 3px solid red;
+    padding: 20px;
+    margin: 10px;
+}
+
+main > :nth-child(3) > :first-child{
+    /* using Top Right Bottom Left  */
+    margin: 10px 20px 30px 40px;
+}
+
+main > :nth-child(3) > :nth-child(2){
+    /* using Top Right Bottom Left  */
+    margin: 90px 50px 20px 20px;
+}
+
+#header {
+    font-size:x-large
+}
+
+.highlight {
+    font-style: italic;
+}
+
+.myArticle {
+    border: 0.5px solid skyblue;
+    padding: 10px 10px 10px 10px;
+}
+
+.about {
+    font-weight: bold;
+}
+
+.services-list {
+    color: blueviolet;
+}
