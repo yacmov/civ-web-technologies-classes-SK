@@ -8,23 +8,22 @@
       /* Flexbox for Navigation */
       .nav-container {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        background-color:darkseagreen;
+        padding: 10px;
       }
-      .nav-container > a {
+      .nav-item{
+        color: #fff;
+        text-decoration: none;
         padding: 10px;
       }
       /* Media Query for Responsive Layout */
-      @media (min-width: 700px) {
+      @media (max-width: 768px) {
         .nav-container {
           display: flex;
-          flex-direction: row;
-          justify-content: center;
+          flex-direction: column;
           align-items: center;
-        }
-        .nav-container > a {
-          padding: 10px;
         }
       }
     </style>
