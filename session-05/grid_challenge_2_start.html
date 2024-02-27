@@ -8,22 +8,18 @@
       /* Grid Container */
       .gallery-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 300px);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 10px;
       }
       /* Gallery Item (Image) */
+      .gallery-item {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
 
       /* Media Query for Responsive Layout */
       @media (max-width: 768px) {
-        .gallery-container {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: repeat(3, 300px);
-          grid-column-gap: 10px;
-          grid-row-gap: 10px;
-        }
       }
     </style>
   </head>
