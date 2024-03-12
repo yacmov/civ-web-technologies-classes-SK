@@ -43,3 +43,11 @@ What do the following 5 terms stand for?
 - Summarise in 2 sentences what it does.
 
 > DNS is Domain Name Service that human-readable domain names into numerical IP addresses, enabling device to locate and connect ot each other on the internet.
+
+## Challenge 5
+
+- Open this YouTube video and [watch](https://www.youtube.com/watch?v=Yt1nesKi5Ec) it
+- What is a Web Server.
+- Summarise in 2 sentences what it does.
+
+> A web server is software that processes and responds to client requests over the internet, delivering web pages and content. It handles HTTP requests, serving files and supporting website functionality.
