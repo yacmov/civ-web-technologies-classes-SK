@@ -35,3 +35,11 @@ What do the following 5 terms stand for?
   - [JS](https://quickref.me/javascript)
 - Choose one of each to use with this unit
 - Save it in your TAFE One Drive account so you can easily find it
+
+## Challenge 4
+
+- Open this Youtube video and [watch](https://www.youtube.com/watch?v=UVR9lhUGAyU) it
+- What is DNS.
+- Summarise in 2 sentences what it does.
+
+> DNS is Domain Name Service that human-readable domain names into numerical IP addresses, enabling device to locate and connect ot each other on the internet.
