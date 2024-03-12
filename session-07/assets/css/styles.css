@@ -43,6 +43,14 @@ h3 {
     font-family: 'Audiowide';
   }
 
+[type="submit"] {
+    color: white;
+    background-color: black;
+    border-radius: 75%;
+    margin: 1rem;
+    padding: 2rem;
+}
+
 [type="submit"]:hover {
     color: red;
 }
@@ -50,6 +58,10 @@ h3 {
 
 div:nth-child(2) > section > div a{
     color: green;
+}
+
+button {
+    font-size: 1.5rem;
 }
 
 
@@ -62,6 +74,9 @@ div:nth-child(2) > section > div a{
         max-width: 768px;
         margin: 0 auto;
     }
+    button {
+        font-size: 2.5rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -70,5 +85,8 @@ div:nth-child(2) > section > div a{
     }
     .container {
         max-width: 1140px;
+    }
+    button {
+        font-size: 3.5rem;
     }
 }
