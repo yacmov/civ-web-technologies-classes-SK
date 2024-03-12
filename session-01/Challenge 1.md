@@ -51,3 +51,11 @@ What do the following 5 terms stand for?
 - Summarise in 2 sentences what it does.
 
 > A web server is software that processes and responds to client requests over the internet, delivering web pages and content. It handles HTTP requests, serving files and supporting website functionality.
+
+## Challenge 6
+
+- Open this YouTube video and [watch](https://www.youtube.com/watch?v=nLYlurfEDSI) it
+- Summarise in 2 sentences what a URL is.
+- What is a URI and how is it different from a URL?
+
+> A URI (Uniform Resource Identifier) is a string of characters that uniquely identifies a resource on the internet. It includes URLs (web addresses) and URNs (identifiers for resources).
