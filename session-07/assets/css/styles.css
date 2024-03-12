@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/Anton-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'MyFont2';
+    src: url('../fonts/JosefinSans-VariableFont_wght.ttf');
+}
+
+nav > ul > li:first-child > a{
+    color: green;
+}
+nav > ul > li:nth-child(2) > a{
+    color: blue;
+}
+nav > ul > li:nth-child(3) > a{
+    color: red;
+}
+nav > ul {
+    color: greenyellow;
+    background-color: #999;
+}
+nav > ul > li:nth-child(4) > a{
+    color: brown;
+}
+nav > ul > li:nth-child(5) > a{
+    color: azure;
+    background-color: black;
+}
+
+
+h1 {
+    color: purple;
+    font-family: "MyFont1";
+}
+
+h2 {
+    font-family: "MyFont2";
+}
+
+h3 {
+    font-family: 'Audiowide';
+  }
+
+[type="submit"]:hover {
+    color: red;
+}
+
+
+div:nth-child(2) > section > div a{
+    color: green;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 18px;
+    }
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 20px;
+    }
+    .container {
+        max-width: 1140px;
+    }
+}
