@@ -1,16 +1,24 @@
-@font-face {
-    font-family: 'MyFont';
-    src: url('../fonts/Anton-Regular.ttf');
-}
 
-@font-face {
-    font-family: 'MyFont2';
-    src: url('../fonts/JosefinSans-VariableFont_wght.ttf');
-}
-
+/* Challenge 1 */
+/* using first child */
 nav > ul > li:first-child > a{
     color: green;
 }
+
+/* Make header before the events list using only pseudo element. */
+#events_list::before {
+    content: "I am header";
+    display: block;
+    width: 100%;
+    height: 20px;
+    color: white;
+    background-color: red;
+}
+
+
+
+
+/* using nth-child  */
 nav > ul > li:nth-child(2) > a{
     color: blue;
 }
@@ -29,20 +37,7 @@ nav > ul > li:nth-child(5) > a{
     background-color: black;
 }
 
-
-h1 {
-    color: purple;
-    font-family: "MyFont1";
-}
-
-h2 {
-    font-family: "MyFont2";
-}
-
-h3 {
-    font-family: 'Audiowide';
-  }
-
+/* style the button using attribute selector */
 [type="submit"] {
     color: white;
     background-color: black;
@@ -55,6 +50,19 @@ h3 {
     color: red;
 }
 
+h1 {
+    color: purple;
+    font-family: "MyFont1";
+}
+
+h2 {
+    font-family: "MyFont2";
+}
+
+h3 {
+    font-family: 'Audiowide';
+}
+
 
 div:nth-child(2) > section > div a{
     color: green;
@@ -65,7 +73,7 @@ button {
 }
 
 
-
+/* Tablet mode */
 @media screen and (min-width: 768px) {
     body{
         font-size: 30px;
@@ -79,6 +87,7 @@ button {
     }
 }
 
+/* Desktop mode */
 @media screen and (min-width: 1200px) {
     body {
         font-size: 50px;
@@ -89,4 +98,14 @@ button {
     button {
         font-size: 3.5rem;
     }
+}
+/* apply font-face */
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/Anton-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'MyFont2';
+    src: url('../fonts/JosefinSans-VariableFont_wght.ttf');
 }
