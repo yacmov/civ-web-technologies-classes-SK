@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Selectors Activity</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+  <header>
+    <h1>News</h1>
+    <!-- <nav></nav> -->
+  </header>
+  <div class="container mx-auto py-6">
+    <form action="process.php" method="post">
+      <label for="username">Username: <input type="text" id="username" name="username" required></label>
+      <label for="email">Email: <input type="email" id="email" name="email"
+          pattern="a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="email@domain.com" required></label>
+      <label for="message">Message: <br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea></label>
+      <label for="subject">Subject
+        <select name="subject" id="subject">
+          <optgroup label="Main Subject">
+            <option value="0">(Select subject)</option>
+            <option value="1">HTML/CSS</option>
+            <option value="2">Javascript</option>
+            <option value="2">Python</option>
+          </optgroup>
+        </select>
+      </label>
+      <label for="subscribe"><input type="checkbox" id="subscribe" name="subscribe" value="yes" checked
+          required>Subscribe</label>
+      <button type="submit" value="submit" id="submit">Submit</button>
+      <button type="reset" value="reset" id="reset">Reset</button>
+    </form>
+    <div class="hidden" id="submitted_msg">
+      <p>Submitted, Thank you 😀</p>
+    </div>
+    <section class="main-content">
+      <h2 class="text-2xl font-semibold mb-4">Latest News</h2>
+      <div class="news-article">
+        <h3 class="text-lg font-semibold mb-2 text-blue-500">New Product Launch</h3>
+        <p class="text-gray-700 mb-4">Our latest product is now available. Check it out!</p>
+        <a href="#"
+          class="bg-blue-500 text-white px-4 py-2 rounded-lg inline-block hover:bg-blue-600 transition duration-300">Read
+          More</a>
+      </div>
+      <div class="news-article mt-6">
+        <h3 class="text-lg font-semibold mb-2 text-blue-500">Client Success Story</h3>
+        <p class="text-gray-700 mb-4">Read about how our services helped a client achieve success.</p>
+        <a href="#"
+          class="bg-blue-500 text-white px-4 py-2 rounded-lg inline-block hover:bg-blue-600 transition duration-300">Read
+          More</a>
+      </div>
+    </section>
+    <aside class="sidebar mt-6 md:mt-0 md:ml-6">
+      <h3 class="text-lg font-semibold mb-4">Upcoming Events</h3>
+      <ul>
+        <li><a href="#" class="text-blue-500 hover:underline">Tech Conference</a></li>
+        <li><a href="#" class="text-blue-500 hover:underline">Product Workshop</a></li>
+        <li><a href="#" class="text-blue-500 hover:underline">Networking Mixer</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer class="bg-gray-300 py-4 text-center">
+    <p class="text-gray-600">&copy; 2023 Your Company. All rights reserved.</p>
+  </footer>
+
+  <!-- Contact Form -->
+  <div class="container mx-auto py-6 bg-white shadow-md rounded-lg">
+    <h3 class="text-2xl font-semibold mb-4 text-center">Contact Us</h3>
+    <form id="contactForm" class="px-4 py-2" action="#" method="post"
+      data-post-url="https://dev.screencraft.net.au/~staff-ag/show-me/index.php?">
+      <!-- Add your form elements herer , use Tailwind classes if you like   -->
+
+
+    </form>
+    <div class="confirmation-message hidden bg-green-500 text-white px-4 py-2 rounded-lg text-center"
+      id="confirmationMessage">Thank you for your message!</div>
+  </div>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
