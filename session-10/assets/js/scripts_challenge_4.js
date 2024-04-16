@@ -1,30 +1,37 @@
 function isValidEmail(email) {
     // Initialise a variable to store feedback
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     let feedback = '';
-  
-    // Check for basic email format 
-    // hint: email.match()
 
-    // Check for spaces in the email 
-    // hint: use includes()
+    switch (email)
+    {
+      // Check for basic email format 
+      // hint: email.match()
+      case email.match(regex):
+        console.log('hello')
+        break
 
-    // Check for the "@" symbol
-    // hint: use includes()
-
-    // Check for multiple "@" symbols
-    // hint: use split()
-    // hint: count the number of parts using .length
-
-    // Check for "@." sequence
-    // hint: use includes()
-
-    // Check for "@" at the start or end
-    // hint: use startsWith(), endsWith() & the or comparison opertor ||
-
-    // Determine the final validation result & return the feedback messgae
-    if (feedback === '') {
-      // return a valid message
-    } else {
+      // Check for spaces in the email 
+      // hint: use includes()
+      
+      // Check for the "@" symbol
+      // hint: use includes()
+      
+      // Check for multiple "@" symbols
+      // hint: use split()
+      // hint: count the number of parts using .length
+      
+      // Check for "@." sequence
+      // hint: use includes()
+      
+      // Check for "@" at the start or end
+      // hint: use startsWith(), endsWith() & the or comparison opertor ||
+      
+    }
+      // Determine the final validation result & return the feedback messgae
+      if (feedback === '') {
+        // return a valid message
+      } else {
       // return aan invalid message use=ing template literals
     }
   }
