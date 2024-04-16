@@ -6,7 +6,6 @@ function logEvent(eventDetails) {
     for (const [index, value] of eventDetails.entries()){
         console.log(eventDetails[index]["innerHTML"].toUpperCase());
     }
-
 }
 
 // Your code goes here
